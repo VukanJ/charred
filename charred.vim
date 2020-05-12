@@ -18,8 +18,10 @@ let g:colors_name="charred"
 " Set background to dark gray
 hi Normal ctermbg=233
 
-" Visual mode -- slightly brighter than background
-hi Visual ctermbg=237
+" Selections
+hi Visual    ctermbg=237
+hi Search    ctermbg=235 ctermfg=NONE cterm=bold
+hi IncSearch cterm=reverse
 
 " Cursor
 hi TermCursor cterm=reverse
@@ -55,26 +57,32 @@ hi PreCondit    ctermfg=5
 " Special syntax colors
 hi Underline      cterm=bold,underline ctermfg=81
 hi Ignore         ctermfg=0 ctermbg=0
-hi Special        ctermfg=9 cterm=bold
-hi Tag            ctermfg=9 cterm=bold
-hi SpecialComment ctermfg=9 cterm=bold
-hi Debug          ctermfg=9 cterm=bold
-hi SpecialKey     ctermfg=1 cterm=bold
-hi EndOfBuffer    ctermfg=1 cterm=bold
+hi Special        ctermfg=9   cterm=bold
+hi Tag            ctermfg=9   cterm=bold
+hi SpecialComment ctermfg=9   cterm=bold
+hi Debug          ctermfg=9   cterm=bold
+hi SpecialKey     ctermfg=1   cterm=bold
+hi EndOfBuffer    ctermfg=1   cterm=bold
+hi Directory      ctermfg=166 cterm=bold
+hi Title          ctermfg=255 cterm=bold
 
 " Pmenu + Wildmenu
-hi Pmenu ctermfg=15 ctermbg=236
+hi Pmenu ctermfg=15 ctermbg=235
 hi PmenuSel ctermfg=15 ctermbg=232 cterm=bold
 " hi PmenuSbar ctermbg=25
 " hi PmenuThumb ctermbg=12
-hi WildMenu ctermfg=yellow ctermbg=blue
+" hi WildMenu ctermfg=yellow ctermbg=blue
 
 " Search and indicators
-hi Search     ctermbg=235 ctermfg=39
-hi MatchParen ctermfg=6 ctermbg=0 cterm=bold
-hi VertSplit  cterm=reverse
+hi MatchParen ctermbg=NONE ctermfg=NONE cterm=bold,underline
+hi VertSplit  ctermfg=245 ctermbg=245
 hi LineNr cterm=bold ctermfg=242 ctermbg=NONE
 hi CursorLineNr ctermfg=1 cterm=bold
+hi ModeMsg cterm=bold ctermfg=white
+hi MoreMsg ctermfg=121
+hi SignColumn ctermbg=235
+hi StatusLine cterm=bold ctermbg=0 ctermfg=245
+hi StatusLineNC cterm=bold ctermbg=0 ctermfg=237
 
 " Error warning messages
 hi ErrorMsg cterm=bold ctermfg=15 ctermbg=9
