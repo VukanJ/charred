@@ -1,10 +1,16 @@
+" Name:         charred
+" Description:  A Vim color scheme based on koehler colorscheme
+" Author:       https://github.com/VukanJ
+" Created:      2020 May 13
+" GitHub:       https://github.com/VukanJ/charred
+"       __                                       __     
+"      /\ \                                     /\ \    
+"   ___\ \ \___      __     _ __   _ __    __   \_\ \   
+"  /'___\ \  _ `\  /'__`\  /\`'__\/\`'__\/'__`\ /'_` \  
+" /\ \__/\ \ \ \ \/\ \L\.\_\ \ \/ \ \ \//\  __//\ \L\ \ 
+" \ \____\\ \_\ \_\ \__/.\_\\ \_\  \ \_\\ \____\ \___,_\
+"  \/____/ \/_/\/_/\/__/\/_/ \/_/   \/_/ \/____/\/__,_ /
 "
-" Charred color scheme
-" Vibrant, bold colorscheme
-" inspired by standard
-" koehler color scheme
-" 
-" Author: VukanJ https://github.com/charred.vim
 
 highlight clear
 
