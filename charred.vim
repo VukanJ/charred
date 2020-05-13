@@ -1,26 +1,27 @@
 "
 " Charred color scheme
 " Vibrant, bold colorscheme
-" inspired by standard koehler color scheme
-" with adjusted colors for Pmenu and Search
+" inspired by standard
+" koehler color scheme
 " 
 " Author: VukanJ https://github.com/charred.vim
 
-set background=dark
 highlight clear
 
-if exists("syntax_on")
+if exists("syntax on")
     syntax reset
 endif
 
 let g:colors_name="charred"
+set background=dark
 
-" Set background to dark gray
+" Normal
 hi Normal ctermbg=233
+hi Ignore ctermbg=233 ctermfg=233
 
 " Selections
 hi Visual    ctermbg=237
-hi Search    ctermbg=235 ctermfg=NONE cterm=bold
+hi Search    ctermfg=NONE ctermbg=238 cterm=bold
 hi IncSearch cterm=reverse
 
 " Cursor
@@ -55,8 +56,7 @@ hi Macro        ctermfg=5
 hi PreCondit    ctermfg=5
 
 " Special syntax colors
-hi Underline      cterm=bold,underline ctermfg=81
-hi Ignore         ctermfg=0 ctermbg=0
+hi Underline      ctermfg=81  cterm=bold,underline 
 hi Special        ctermfg=9   cterm=bold
 hi Tag            ctermfg=9   cterm=bold
 hi SpecialComment ctermfg=9   cterm=bold
@@ -66,24 +66,42 @@ hi EndOfBuffer    ctermfg=1   cterm=bold
 hi Directory      ctermfg=166 cterm=bold
 hi Title          ctermfg=255 cterm=bold
 
-" Pmenu + Wildmenu
-hi Pmenu ctermfg=15 ctermbg=235
-hi PmenuSel ctermfg=15 ctermbg=232 cterm=bold
-" hi PmenuSbar ctermbg=25
-" hi PmenuThumb ctermbg=12
-" hi WildMenu ctermfg=yellow ctermbg=blue
+" Pmenu
+hi Pmenu      ctermfg=15  ctermbg=235
+hi PmenuSel   ctermfg=15  ctermbg=232 cterm=bold
+hi PmenuSbar  ctermbg=240
+hi PmenuThumb ctermbg=15
 
 " Search and indicators
-hi MatchParen ctermbg=NONE ctermfg=NONE cterm=bold,underline
-hi VertSplit  ctermfg=245 ctermbg=245
-hi LineNr cterm=bold ctermfg=242 ctermbg=NONE
-hi CursorLineNr ctermfg=1 cterm=bold
-hi ModeMsg cterm=bold ctermfg=white
-hi MoreMsg ctermfg=121
-hi SignColumn ctermbg=235
-hi StatusLine cterm=bold ctermbg=0 ctermfg=245
-hi StatusLineNC cterm=bold ctermbg=0 ctermfg=237
+hi SignColumn                ctermbg=235
+hi StatusLine   ctermfg=245  ctermbg=0    cterm=bold
+hi StatusLineNC ctermfg=237  ctermbg=0    cterm=bold
+hi Folded       ctermfg=14   ctermbg=242
+hi FoldColumn   ctermfg=14   ctermbg=242
+hi Conceal      ctermfg=7    ctermbg=242
+hi CursorColumn              ctermbg=237
+hi CursorLine   ctermfg=NONE ctermbg=NONE cterm=underline
+hi ColorColumn  ctermfg=NONE ctermbg=237  cterm=bold
+hi Whitespace   ctermfg=4                 cterm=bold
+hi MatchParen   ctermfg=NONE ctermbg=NONE cterm=bold,underline
+hi VertSplit    ctermfg=245  ctermbg=245
+hi LineNr       ctermfg=242  ctermbg=NONE cterm=bold
+hi CursorLineNr ctermfg=1                 cterm=bold
+hi ModeMsg      ctermfg=15                cterm=bold
+hi MoreMsg      ctermfg=121
+
+" Tabs
+hi TabLine     ctermfg=250 ctermbg=235 cterm=underline
+hi TabLineSel  ctermfg=254 ctermbg=233 cterm=bold
+hi TabLineFill ctermbg=233 ctermfg=232
+
+" Spell
+hi SpellBad   ctermfg=1   ctermbg=NONE cterm=bold,underline
+hi SpellCap   ctermfg=12  ctermbg=NONE cterm=bold,underline
+hi SpellRare  ctermfg=202 ctermbg=NONE cterm=bold,underline
+hi SpellLocal ctermfg=13  ctermbg=NONE cterm=bold,underline
 
 " Error warning messages
-hi ErrorMsg cterm=bold ctermfg=15 ctermbg=9
-hi WarningMsg cterm=bold ctermfg=1
+hi Error      ctermfg=1 ctermbg=NONE cterm=bold 
+hi ErrorMsg   ctermfg=1 ctermbg=NONE cterm=bold 
+hi WarningMsg ctermfg=1              cterm=bold 
