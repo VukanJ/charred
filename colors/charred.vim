@@ -133,3 +133,7 @@ hi SpellLocal ctermfg=13  ctermbg=NONE cterm=bold,underline
 hi Error      ctermfg=1 ctermbg=NONE cterm=bold 
 hi ErrorMsg   ctermfg=1 ctermbg=NONE cterm=bold 
 hi WarningMsg ctermfg=1              cterm=bold 
+
+" Lsp
+hi LspDiagnosticsDefaultError  ctermfg=88  ctermbg=NONE cterm=bold
+hi LspDiagnosticsDefaultWarning ctermfg=53 ctermbg=NONE cterm=bold
