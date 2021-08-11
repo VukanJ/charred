@@ -54,6 +54,7 @@ hi IncSearch cterm=reverse
 
 " Cursor
 hi TermCursor cterm=reverse
+hi CursorLine ctermbg=234 cterm=NONE
 
 " Basic syntax coloring
 hi Type         ctermfg=121 cterm=bold
