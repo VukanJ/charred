@@ -108,7 +108,7 @@ hi Folded       ctermfg=14   ctermbg=242
 hi FoldColumn   ctermfg=14   ctermbg=242
 hi Conceal      ctermfg=7    ctermbg=242
 hi CursorColumn              ctermbg=237
-hi CursorLine   ctermfg=NONE ctermbg=NONE cterm=underline
+hi CursorLine   ctermbg=235  cterm=NONE
 hi ColorColumn  ctermfg=NONE ctermbg=237  cterm=bold
 hi Whitespace   ctermfg=4                 cterm=bold
 hi MatchParen   ctermfg=NONE ctermbg=NONE cterm=bold,underline
