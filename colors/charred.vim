@@ -62,7 +62,7 @@ hi Structure    ctermfg=121 cterm=bold
 hi Typedef      ctermfg=121 cterm=bold
 hi Identifier   ctermfg=130 cterm=bold
 hi String       ctermfg=13  cterm=bold
-hi Comment      ctermfg=44  cterm=bold
+hi Comment      ctermfg=239
 hi Constant     ctermfg=13  cterm=bold
 hi Statement    ctermfg=11  cterm=bold
 hi Operator     ctermfg=11  cterm=bold
